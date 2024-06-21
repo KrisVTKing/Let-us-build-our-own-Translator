@@ -1,6 +1,6 @@
 Requirements for Running This Application
 
-This Application Requires AWS Credentials
+This Application Requires AWS Credentials And You Need The Proper Permissions in AWS
 Access Key ID
 AWS Secret Access Key
 AWS Region
