@@ -14,7 +14,12 @@ def main_menu():
     region = None
 
     while True:
-        select = int(input(Fore.CYAN + "1. Login\n2. Select Language\n3. Translate\n4. Exit\n"))
+        try:
+            select = int(input(Fore.CYAN + "1. Login\n2. Select Language\n3. Translate\n4. Exit\n"))
+        except ValueError:
+            print(Fore.RED + "Invalid input. Please enter a number.")
+            continue
+
         if select == 1:
             session, region = login_to_aws()
         elif select == 2:
@@ -39,9 +44,3 @@ def main_menu():
 
 if __name__ == "__main__":
     main_menu()
-
-
-
-
-
-
